@@ -5,13 +5,12 @@
   "main": "src/index.js",
   "files": [
     "src/**/*",
+    "public/**/*",
     "README.md",
     "LICENSE"
   ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node example/app.js",
-    "prepublishOnly": "echo \"Ready to publish\""
+  "exports": {
+    ".": "./src/index.js"
   },
   "keywords": ["swagger", "ui", "swagger-ui", "express", "library", "api", "swagman", "swagman-web", "swagman-ui", "openapi", "open-api"],
   "author": "NahueTomas",
