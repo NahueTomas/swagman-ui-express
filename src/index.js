@@ -33,7 +33,6 @@ const setup = (swaggerDoc, options = {}) => {
     window.LOCAL_SPEC = ${JSON.stringify(swaggerDoc)};
     
     document.addEventListener('DOMContentLoaded', function() {
-      container.innerHTML = ''; // Clear any existing content
       window.renderSwagman('swagman-web', {
         spec: window.LOCAL_SPEC
       });
