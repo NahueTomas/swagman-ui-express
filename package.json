@@ -1,0 +1,33 @@
+{
+  "name": "swagman-ui-express",
+  "version": "0.0.1",
+  "description": "Library to get a Swagman Web in Express",
+  "main": "src/index.js",
+  "files": [
+    "src/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node example/app.js",
+    "prepublishOnly": "echo \"Ready to publish\""
+  },
+  "keywords": ["swagger", "ui", "swagger-ui", "express", "library", "api", "swagman", "swagman-web", "swagman-ui", "openapi", "open-api"],
+  "author": "NahueTomas",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NahueTomas/swagman-ui-express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NahueTomas/swagman-ui-express/issues"
+  },
+  "homepage": "https://github.com/NahueTomas/swagman-ui-express#readme"
+}
