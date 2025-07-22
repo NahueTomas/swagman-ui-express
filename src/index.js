@@ -14,7 +14,7 @@ const serve = express.static(path.join(__dirname, '../public'), {
  */
 const setup = (swaggerDoc, options = {}) => {
   return (req, res) => {
-    const title = options.title || swaggerDoc.info?.title || 'API Documentation';
+    const title = options.title || 'Swagman Web';
     
     const html = `
 <!DOCTYPE html>

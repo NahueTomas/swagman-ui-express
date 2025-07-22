@@ -46,28 +46,6 @@ app.listen(3000, () => {
 });
 ```
 
-## 📖 With Custom Title
-
-```javascript
-const express = require("express");
-const swagmanUI = require("swagman-ui-express");
-
-const app = express();
-
-const swaggerDoc = {
-  // ... your swagger doc
-};
-
-// Custom title
-app.use(
-  "/docs",
-  swagmanUI.serve,
-  swagmanUI.setup(swaggerDoc, { title: "My Custom API Docs" })
-);
-
-app.listen(3000);
-```
-
 ## 🔧 API
 
 ### `swagmanUI.serve`
@@ -79,15 +57,9 @@ Static middleware to serve Swagman Web assets.
 **Parameters:**
 
 - `swaggerDoc` (Object) - Your OpenAPI/Swagger specification object
-- `options.title` (string, optional) - Custom page title (default: uses `swaggerDoc.info.title`)
+- `options.title` (string, optional) - Custom page title (default: uses "Swagman Web")
 
 **Returns:** Express middleware function
-
-### Usage
-
-```javascript
-app.use("/api-docs", swagmanUI.serve, swagmanUI.setup(swaggerDoc));
-```
 
 ## 📝 License
 
