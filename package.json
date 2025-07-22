@@ -1,16 +1,18 @@
 {
   "name": "swagman-ui-express",
   "version": "0.0.2",
-  "description": "Library to get a Swagman Web in Express",
-  "main": "src/index.js",
+  "description": "Library to get a Swagman Web application into Express",
+  "main": "./index.js",
   "files": [
-    "src/**/*",
-    "public/**/*",
-    "README.md",
-    "LICENSE"
+    "package.json",
+    "public/swagman-embed.css",
+    "public/swagman-embed.life.js",
+    "index.js",
+    "LICENSE",
+    "README.md"
   ],
   "exports": {
-    ".": "./src/index.js"
+    ".": "./index.js"
   },
   "keywords": ["swagger", "ui", "swagger-ui", "express", "library", "api", "swagman", "swagman-web", "swagman-ui", "openapi", "open-api"],
   "author": "NahueTomas",
