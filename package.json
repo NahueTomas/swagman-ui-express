@@ -1,6 +1,6 @@
 {
   "name": "swagman-ui-express",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Library to get a Swagman Web in Express",
   "main": "src/index.js",
   "files": [
