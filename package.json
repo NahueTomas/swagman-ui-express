@@ -6,7 +6,7 @@
   "files": [
     "package.json",
     "public/swagman-embed.css",
-    "public/swagman-embed.life.js",
+    "public/swagman-embed.iife.js",
     "index.js",
     "LICENSE",
     "README.md"
