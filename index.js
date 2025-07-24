@@ -4,7 +4,7 @@ const express = require('express');
 /**
  * Serve static middleware for Swagman Web assets
  */
-const serve = express.static(path.join(__dirname, '../public'), {
+const serve = express.static(path.join(__dirname, '/public'), {
   index: false,
   maxAge: '1d'
 });
