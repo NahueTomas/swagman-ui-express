@@ -1,6 +1,7 @@
 # Swagman UI Express
 
 A simple library to serve ["Swagman Web"](https://github.com/NahueTomas/swagman-web) in Express applications.
+![Specification Info Image](./docs/images/specification-operation.png)
 
 ## 🚀 Install
 
