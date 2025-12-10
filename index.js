@@ -28,20 +28,16 @@ const setup = (swaggerDoc, options = {}) => {
   <div id="swagman-web"></div>
   
   <link rel="stylesheet" href="./swagman-embed.css">
-  <script src="./swagman-embed.iife.js"></script>
-  <script>
+  <script src="./swagman-embed.iife.js" onload="
     window.LOCAL_SPEC = ${JSON.stringify(swaggerDoc)};
-    
-    document.addEventListener('DOMContentLoaded', function() {
-      window.renderSwagman('swagman-web', {
-        spec: window.LOCAL_SPEC
-      });
+    window.renderSwagman('swagman-web', {
+      spec: window.LOCAL_SPEC
     });
-  </script>
+  "></script>
 </body>
 </html>
     `;
-    
+
     res.setHeader('Content-Type', 'text/html');
     res.send(html);
   };
