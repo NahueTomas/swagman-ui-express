@@ -22,18 +22,22 @@ const setup = (swaggerDoc, options = {}) => {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./swagman-embed.iife.js" defer></script>
   <title>${title}</title>
 </head>
 <body>
   <div id="swagman-web"></div>
   
   <link rel="stylesheet" href="./swagman-embed.css">
-  <script src="./swagman-embed.iife.js" onload="
+  <script>
     window.LOCAL_SPEC = ${JSON.stringify(swaggerDoc)};
-    window.renderSwagman('swagman-web', {
-      spec: window.LOCAL_SPEC
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      window.renderSwagman('swagman-web', {
+        spec: window.LOCAL_SPEC
+      });
     });
-  "></script>
+  </script>
 </body>
 </html>
     `;
